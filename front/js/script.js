@@ -22,9 +22,9 @@ fetch("http://localhost:3000/api/products/")
 function displayKanap() {
     // Déclaration de variable productKanap
     let productKanap = document.getElementById("items");
-    // Boucle pour chaque kanap dans l'api
+    // Boucle pour chaque model kanap dans l'api
     for (let kanap of ) {
-    productKanap.innerHTML += document.getElementById('items').innerHTML = // Ajout d'un autre kanap id items à chaque fois qu'on rentre dans la boucle
+    productKanap.innerHTML += document.getElementById('items').innerHTML = // Ajout d'un autre model kanap id items à chaque fois qu'on rentre dans la boucle
     `<a href="./product.html?id=${._id}">
         <article>
             <img src="${.imageUrl}" alt="${.altTxt}">

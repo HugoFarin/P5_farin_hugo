@@ -19,18 +19,18 @@ fetch("http://localhost:3000/api/products/")
 });
 
 // Fonction pour afficher les produits de l'api
-function displayKanap() {
+function displayKanap(canapes) {
     // Déclaration de variable productKanap
     let productKanap = document.getElementById("items");
-    // Boucle pour chaque model kanap dans l'api
-    for (let kanap of ) {
-    productKanap.innerHTML += document.getElementById('items').innerHTML = // Ajout d'un autre model kanap id items à chaque fois qu'on rentre dans la boucle
-    `<a href="./product.html?id=${._id}">
+    // Boucle pour chaque modelde canapes dans l'api
+    canapes.forEach((canape) => {
+        productKanap.innerHTML += document.getElementById('items').innerHTML = // Ajout d'un autre model de canapés id items à chaque fois qu'on rentre dans la boucle
+    `<a href="./product.html?id=${canape._id}">
         <article>
-            <img src="${.imageUrl}" alt="${.altTxt}">
-            <h3 class="productName">${.name}</h3>
-            <p class="productDescription">${.description}</p>
+            <img src="${canape.imageUrl}" alt="${canape.altTxt}">
+            <h3 class="productName">${canape.name}</h3>
+            <p class="productDescription">${canape.description}</p>
         </article>
     </a>`
-    }
+    }) 
 }
